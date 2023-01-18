@@ -1898,6 +1898,12 @@ main h1::after {
     margin-bottom: 20px;
 }
 
+@media (max-width: 992px) {
+    .project-page {
+        grid-template-columns: minmax(200px, 1fr);
+    }
+}
+
 .project-page .box {
     background-color: white;
     border-radius: 10px;
@@ -1935,6 +1941,7 @@ main h1::after {
     display: flex;
     gap: 10px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .project-page .box .types span {
@@ -1982,3 +1989,78 @@ main h1::after {
 
 
 /* =========Courses Page===================== */
+
+.courses-page {
+    margin-inline: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+@media (max-width: 992px) {
+    .courses-page {
+        grid-template-columns: minmax(200px, 1fr);
+    }
+}
+
+.courses-page .box {
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+}
+
+.courses-page .box img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.courses-page .box img:nth-of-type(2) {
+    position: absolute;
+    width: 50px;
+    top: 20px;
+    left: 20px;
+}
+
+.courses-page .box .cr-info {
+    padding: 20px;
+}
+
+.courses-page .box .cr-info h4 {
+    margin: 0;
+}
+
+.courses-page .box .cr-info p {
+    font-size: 15px;
+    color: gray;
+    margin-bottom: 30px;
+}
+
+.courses-page .box .cr-info .ab {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    position: relative;
+}
+
+.courses-page .box .cr-info .ab a {
+    color: white;
+    background-color: #0075ff;
+    border-radius: 4px;
+    padding: 4px 10px;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.courses-page .box .ab span {
+    font-size: 14px;
+    color: gray;
+}
+
+
+
+/* =================Friends Page====================== */
+
